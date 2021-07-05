@@ -216,6 +216,14 @@ export interface SpinConfig {
   size: SpinSize
 }
 
+export interface DrawerConfig {
+  closable: boolean
+  mask: boolean
+  maskClosable: boolean
+  wrapClassName: string
+  keyboard: boolean
+}
+
 export interface ProgressConfig {
   size: ProgressSize
   format: ProgressFormat
@@ -275,6 +283,7 @@ export interface GlobalConfig {
   modal: ModalConfig
   result: ResultConfig
   spin: SpinConfig
+  drawer: DrawerConfig
   progress: ProgressConfig
   // Other
   backTop: BackTopConfig

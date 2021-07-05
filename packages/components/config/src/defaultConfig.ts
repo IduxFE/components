@@ -16,6 +16,7 @@ import type {
   MessageConfig,
   ResultConfig,
   SpinConfig,
+  DrawerConfig,
   ProgressConfig,
   BackTopConfig,
   AnchorConfig,
@@ -204,6 +205,14 @@ const spin = shallowReactive<SpinConfig>({
   size: 'small',
 })
 
+const drawer = shallowReactive<DrawerConfig>({
+  closable: true,
+  mask: true,
+  maskClosable: true,
+  wrapClassName: '',
+  keyboard: true,
+})
+
 const progress = shallowReactive<ProgressConfig>({
   size: 'medium',
   format: (percent: number) => percent + '%',
@@ -259,6 +268,7 @@ export const defaultConfig: GlobalConfig = {
   modal,
   result,
   spin,
+  drawer,
   progress,
   steps,
   // Other

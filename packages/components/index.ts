@@ -38,6 +38,8 @@ import { IxTimeline, IxTimelineItem } from '@idux/components/timeline'
 import { IxTooltip } from '@idux/components/tooltip'
 import { IxPopover } from '@idux/components/popover'
 // import Feedback
+import { IxMask } from './mask'
+import { IxDrawer } from './drawer'
 import { IxModal } from '@idux/components/modal'
 import { IxResult } from '@idux/components/result'
 import { IxSpin } from '@idux/components/spin'
@@ -102,9 +104,12 @@ const components = [
   IxTooltip,
   IxPopover,
   // components Feedback
+  IxMask,
+  IxDrawer,
   IxModal,
   IxResult,
   IxSpin,
+  // Other
   IxProgress,
   // components Other
   IxBackTop,
