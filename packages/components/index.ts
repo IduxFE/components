@@ -25,6 +25,7 @@ import { IxRadio, IxRadioButton, IxRadioGroup } from '@idux/components/radio'
 import { IxRate } from '@idux/components/rate'
 import { IxSelect, IxOption, IxOptionGroup } from '@idux/components/select'
 import { IxSwitch } from '@idux/components/switch'
+import { IxTimePicker } from '@idux/components/time-picker'
 // import Data Display
 import { IxCollapse, IxCollapsePanel } from '@idux/components/collapse'
 import { IxSteps, IxStep } from '@idux/components/steps'
@@ -85,6 +86,7 @@ const components = [
   IxOption,
   IxOptionGroup,
   IxSwitch,
+  IxTimePicker,
   // components Data Display
   IxCollapse,
   IxCollapsePanel,

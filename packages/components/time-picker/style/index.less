@@ -1,0 +1,52 @@
+@import '../../style/default.less';
+
+@time-picker-prefix: ~'@{idux-prefix}-time-picker';
+@time-picker-panel-prefix: ~'@{idux-prefix}-time-picker-panel';
+@time-options-prefix: ~'@{idux-prefix}-time-options';
+
+.@{time-picker-prefix} {
+  display: inline-flex;
+  &__clear-icon {
+    cursor: pointer;
+  }
+}
+
+.@{time-picker-panel-prefix} {
+  display: flex;
+  max-height: 200px;
+  background-color: @white;
+  box-shadow: @popover-inner-box-shadow;
+
+  .@{time-options-prefix} {
+    list-style-type: none;
+    margin: 0;
+    overflow-y: hidden;
+    border-right: 1px solid @time-option-border-color;
+
+    &:last-child {
+      border-right: none;
+    }
+
+    &:hover {
+      overflow-y: scroll;
+    }
+
+    &__item {
+      padding: 8px 20px;
+      margin: 0;
+      cursor: pointer;
+      &:hover {
+        background-color: @time-option-hover-bg-color;
+      }
+      &--disabled {
+        cursor: not-allowed;
+        color: @time-picker-disabled-color;
+      }
+      &--selected {
+        transition-duration: @time-option-transition-duration;
+        color: @time-option-selected-color;
+        background-color: @time-option-selected-bg-color;
+      }
+    }
+  }
+}
