@@ -125,6 +125,20 @@ export interface SelectConfig {
   valueKey: string
 }
 
+export type TimePickerSize = 'large' | 'medium' | 'small'
+export interface TimePickerConfig {
+  size: TimePickerSize
+  clearable: boolean
+  borderless: boolean
+  suffix: string
+  clearIcon: string
+  clearText: string
+}
+
+export interface TimeRangePickerConfig extends TimePickerConfig {
+  separator: string
+}
+
 // Data Display
 export interface BadgeConfig {
   showZero: boolean
@@ -261,6 +275,8 @@ export interface GlobalConfig {
   radio: RadioConfig
   rate: RateConfig
   select: SelectConfig
+  timePicker: TimePickerConfig
+  timeRangePicker: TimeRangePickerConfig
   // Data Display
   badge: BadgeConfig
   card: CardConfig

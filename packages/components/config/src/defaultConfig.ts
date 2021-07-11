@@ -32,6 +32,8 @@ import type {
   FormConfig,
   PaginationConfig,
   ModalConfig,
+  TimePickerConfig,
+  TimeRangePickerConfig,
 } from './types'
 
 import { shallowReactive } from 'vue'
@@ -128,6 +130,25 @@ const select = shallowReactive<SelectConfig>({
   searchable: false,
   size: 'medium',
   valueKey: 'value',
+})
+
+const timePicker = shallowReactive<TimePickerConfig>({
+  size: 'medium',
+  clearable: true,
+  borderless: false,
+  suffix: 'clock-circle',
+  clearIcon: 'close-circle',
+  clearText: 'clear',
+})
+
+const timeRangePicker = shallowReactive<TimeRangePickerConfig>({
+  size: 'medium',
+  clearable: true,
+  borderless: false,
+  suffix: 'clock-circle',
+  clearIcon: 'close-circle',
+  clearText: 'clear',
+  separator: '至',
 })
 
 // --------------------- Data Display ---------------------
@@ -243,6 +264,8 @@ export const defaultConfig: GlobalConfig = {
   rate,
   radio,
   select,
+  timePicker,
+  timeRangePicker,
   // Data Display
   badge,
   card,
