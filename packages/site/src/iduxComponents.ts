@@ -16,6 +16,7 @@ import { IxAffix } from '@idux/components/affix'
 import { IxDropdown, IxDropdownButton } from '@idux/components/dropdown'
 import { IxMenu, IxMenuItem, IxMenuItemGroup, IxMenuDivider, IxSubMenu } from '@idux/components/menu'
 // import Data Entry
+import { IxTimePicker } from '@idux/components/time-picker'
 import { IxForm, IxFormItem, IxFormWrapper } from '@idux/components/form'
 import { IxCheckbox, IxCheckboxGroup } from '@idux/components/checkbox'
 import { IxInput, IxTextarea } from '@idux/components/input'
@@ -70,6 +71,7 @@ const components = [
   IxMenuDivider,
   IxSubMenu,
   // components Data Entry
+  IxTimePicker,
   IxForm,
   IxFormItem,
   IxFormWrapper,
